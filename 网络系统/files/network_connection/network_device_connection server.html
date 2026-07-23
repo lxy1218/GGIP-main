@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网络设备互联表</title>
+
+    <style>
+        body{
+            font-family: Arial, "Microsoft YaHei", sans-serif;
+            background:#f5f5f5;
+            margin:40px;
+        }
+
+        h1{
+            text-align:center;
+            color:#003366;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            background:#fff;
+            box-shadow:0 2px 8px rgba(0,0,0,.15);
+        }
+
+        th{
+            background:#005BAC;
+            color:white;
+            padding:12px;
+            border:1px solid #ddd;
+        }
+
+        td{
+            padding:10px;
+            border:1px solid #ddd;
+            text-align:center;
+        }
+
+        tr:nth-child(even){
+            background:#f8f8f8;
+        }
+
+        tr:hover{
+            background:#eaf4ff;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>网络设备互联关系表(核心与服务器互联)</h1>
+<table>
+
+<tr>
+    <th>本端设备</th>
+    <th>本端接口</th>
+    <th>对端设备</th>
+    <th>对端接口</th>
+    <th>备注</th>
+</tr>
+
+
+<tr>
+<td>PSSOUSHSW01</td>
+<td>GigabitEthernet1/0/46</td>
+<td>路灯服务器1</td>
+<td>Manage port 管理口</td>
+</tr>
+
+<br>
+<td>PSSOUSHSW01</td>
+<td>GigabitEthernet1/0/47</td>
+<td>路灯服务器1</td>
+<td>ETH1</td>
+<td>一共2台路灯服务器,另一台放哪里和怎么跳线待定吧......<br> 两个雷达服务器也待定吧</br></td>
+
+</tr>
+
+<tr>
+<td>PSSOUSHSW01</td>
+<td>GigabitEthernet1/0/48</td>
+<td>路灯服务器1</td>
+<td>ETH2</td>
+</tr>
+
+
+
+</table>
+
+
+</body>
+</html>
